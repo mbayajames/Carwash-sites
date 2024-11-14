@@ -1,0 +1,469 @@
+/* global css reset  */
+/* *,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+  border: none;
+  overflow-x: hidden;
+} */
+
+/* default  16px => relative units   width 120px abolute  1rem units 16px 10/16 => .650 * 100 = 62.5%
+1rem => 10px  */
+
+
+/* body{
+  box-sizing: border-box;
+  line-height: 1.5;
+} */
+
+nav {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  box-sizing: border-box;
+  margin-bottom: 250px;
+}
+
+.menu-bar {
+  /* margin-top: 50px; */
+  font-family: serif;
+  list-style: none;
+  background-color: rgb(227, 62, 1);
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 20px;
+  left: 120px;
+  color: white;
+}
+
+.menu-bar ul li {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background: black;
+  border-radius: 3px;
+}
+
+/* .menu-bar .fa{
+  margin-right: 8px
+} */
+
+.sub-menu-1 {
+  display: none;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: red;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+/* .menu-bar ul li:hover .sub-menu-2{
+  display: block;
+  position: absolute;
+  background: red;
+  margin-top: 5px;
+  margin-left: -15px;
+} */
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 20px;
+}
+
+/* .menu-bar ul li:hover .sub-menu-2 ul{
+  display: block;
+  margin: 5px;
+} */
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: black;
+}
+
+/* .menu-bar ul li:hover .sub-menu-2 ul li{
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+} */
+
+.section1 {
+  background-color: black;
+  width: 100%;
+  padding: 30px;
+}
+
+.section2 {
+  background-color: rgb(237, 234, 234);
+  width: 100%;
+  padding: 20px;
+}
+
+#header1 {
+  width: 100%;
+  /* margin: 0; */
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  font-weight: 1200;
+  font-size: x-large;
+  margin-left: 450px;
+  color: white;
+}
+
+#header2 {
+  margin: 0;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  font-weight: 1200;
+  font-size: x-large;
+  margin-left: 450px;
+  color: black;
+}
+
+/* Card Slider HTML & CSS | CodingNepal */
+/* body */
+
+/* Importing Google fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+.container swiper {
+  /* margin-top: 800px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#eceffe, #ced6fb);
+}
+
+/* LIST */
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  width: 400px;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+/* .card-wrapper{
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+} */
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372f0;
+}
+
+.card-list .card-link .card-image {
+  margin-left: 100px;
+  padding-top: 6.25%; /* aspect-ratio: 16/9; */
+  position: relative;
+  /* width: 100%; */
+  object-fit: cover;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.badge {
+  margin-left: 50px;
+}
+
+.card-list .card-link .badge {
+  color: #5372f0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 55px 8px;
+  background: #dde4ff;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* padding: 10px;
+    border: 1px solid #ddd; */
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.TOTALBODYPROTECTION {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.GOWAX {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.PRIMEDRY {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.WHEELCLEANER {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.GOBIGLIGHTSHOW {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.GOBATH {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.BUGSOFF {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.RUSTREPEL {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.SHINYTIRES {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.TRIPLEFOAM {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.badge.TOTALBODYPROTECTION {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.CLEARCOATPOLISH {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .badge.UNDERBODYBLAST {
+  color: white;
+  background: black;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.16rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372f0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: white;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slider-bullet {
+  color: #5372f0;
+  margin: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slider-button {
+    display: none;
+  }
+}
+
+/* Card Slider HTML & CSS | CodingNepal */
+
+.btn {
+  color: white;
+  background-color: red;
+  border-radius: 90px;
+  /* box-sizing: border-box; */
+  margin-top: 40px;
+  margin-left: 700px;
+  padding: 10px 10px;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+#div1 {
+  display: inline-flex;
+  margin-top: 40px;
+  margin-left: 300px;
+  margin-right: 60px;
+  column-gap: 80px;
+}
+
+#div2 {
+  display: inline-flex;
+  margin-left: 300px;
+  margin-right: 60px;
+  column-gap: 80px;
+}
+
+#div3 {
+  display: inline-flex;
+  margin-left: 300px;
+  margin-right: 60px;
+  column-gap: 80px;
+}
+
+.class {
+  width: 100%;
+  background-color: rgb(112, 243, 243);
+  display: flex;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.Card-wrapper1 {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  background-color: rgb(8, 185, 244);
+}
+
+.Card-item {
+  list-style: none;
+  padding-top: 80px;
+}
+
+.Card-wrapper2 {
+  background-color: red;
+}
+
+.card-link {
+  color: white;
+}
+
+.h1 .h1 .h3 {
+  align-items: center;
+  margin-left: 40px;
+}
+
+.but {
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: white;
+  
+}
+
+.footer-img {
+  height: 100px;
+}
+
+.footer-section2 ul li a{
+  list-style: none;
+}
+
+.footer-content {
+  list-style: none;
+
+  color: white;
+  margin-top: 50px;
+  justify-content: space-between;
+  row-gap: 40px;
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+.footer-content a {
+  text-decoration: none;
+  color: white;
+}
+.footer-bottom{
+  margin-top: 50px;
+  margin-left: 600px;
+}
