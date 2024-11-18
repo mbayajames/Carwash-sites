@@ -1,0 +1,189 @@
+/* ==============global css reset ============ */
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-weight: 400;
+  }
+  
+  body{
+    line-height: 1.5;
+    box-sizing: border-box;
+    
+  }
+  
+  
+  /* ================about-us section styling =================== */
+  .about{
+    background-image: linear-gradient( to right bottom, rgba(0,0,0,.5),
+    rgba(0,0,0,.5)), url(/images/about-us.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  
+  .container{
+    max-width: 75rem;
+    /* background-color: rgb(138, 138, 112); */
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  .heading-primary{
+    margin-top: 3rem;
+    display: inline-block;
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    color: rgb(248, 96, 40);
+    font-weight: 400;
+  }
+  
+  .para{
+    display: block;
+    color: #d7d7d7;
+    text-align: justify;
+    max-width: 50rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+  }
+  
+  .col-1-of-3{
+    background-color: blueviolet;
+    padding: .6rem;
+    margin-top: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .col-1-of-3:not(:nth-child(1)){
+    margin-left: 1rem;
+  }
+  
+  
+  /* ============heading=========== */
+  .heading-secondary{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgb(248, 96, 40);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .icon{
+    display: block;
+    font-size: 2rem;
+    color:rgb(245, 150, 115);
+  }
+  
+  .heading-tertiary{
+    color: rgb(248, 96, 40);
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+    text-transform: capitalize;
+  }
+  
+  
+  /* ==================news section============ */
+  
+  .article{
+    padding: 1rem;
+  }
+  
+  .article:not(:last-child){
+    margin-right: .5rem;
+  }
+  
+  .news .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content .icon{
+    display: inline-block;
+    font-size: 2\3rem;
+    color: rgb(255, 136, 93);
+  }
+  
+  .heading{
+    color: #fff;
+    font-size: 2rem;
+    color: rgb(248, 96, 40);
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+  }
+  
+  
+  /* ============footer========== */
+  /* FOOTER */
+  footer {
+    background-color: #000;
+    color: white;
+  }
+  
+  .footer-img {
+    height: 100px;
+  }
+  
+  
+  
+  .footer-section2 ul , .footer-section1 ul{
+    list-style: none;
+  }
+  
+  .footer-section2 li, .footer-section1 li {
+    display: block;
+    font-size: 1.6rem;
+    margin-top: .5rem;
+  }
+  .footer-section2 li a,
+   .footer-section1 li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  .footer-content {
+    margin-top: 50px;
+    justify-content: space-between;
+    row-gap: 40px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .footer-bottom p{
+   font-size: 1.6rem;
+   margin: .5rem;
+   text-align: center;
+   padding: 1rem;
+  }
+  
+  h3{
+    font-size: 1.6rem;
+    margin-top: .5rem;
+  }
+  
+  .btn{
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 1rem .5rem;
+    background-color: brown;
+    margin-top: .5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+    
